@@ -20,7 +20,15 @@
     --shadow-hover: 0 8px 30px rgba(0,0,0,0.12);
 }
 
-.result-page { background: var(--r-bg); min-height: 100vh; font-family: 'Inter','Noto Sans JP',sans-serif; }
+.result-page { 
+    background: var(--r-bg); 
+    min-height: 100vh; 
+    font-family: 'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; 
+    line-height: 1.6;
+    color: var(--r-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* HEADER */
 .result-header { background: var(--r-navy); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
