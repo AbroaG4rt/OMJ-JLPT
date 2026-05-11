@@ -1,4 +1,4 @@
-﻿// assets/js/result.js â€” Redesigned Result Engine
+// assets/js/result.js â€” Redesigned Result Engine
 
 document.addEventListener('DOMContentLoaded', async () => {
     const __lang = window.__resultLang || localStorage.getItem('lang') || 'en';
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const SECTION_TIPS = {
         kanji: { icon: 'ðŸ“–', title: 'Boost Your Kanji Score', text: 'Study kanji using the radical decomposition method. Learn the meaning of common radicals and use them to guess unfamiliar kanji.' },
-        bunpou: { icon: 'âœï¸', title: 'Strengthen Your Grammar', text: 'Focus on grammar patterns specific to your JLPT level. Practice sentence construction and fill-in-the-blank exercises daily.' },
+        bunpou: { icon: 'âœ ï¸ ', title: 'Strengthen Your Grammar', text: 'Focus on grammar patterns specific to your JLPT level. Practice sentence construction and fill-in-the-blank exercises daily.' },
         choukai: { icon: 'ðŸŽ§', title: 'Improve Your Listening', text: 'Immerse yourself in native Japanese audio. Try shadowing techniques: listen, pause, repeat. Your ear will train quickly.' }
     };
 
     const SECTION_META = {
-        kanji: { name: 'Kanji', jp: 'æ–‡å­—ãƒ»èªžå½™', icon: 'ðŸ“–', cls: 'kanji' },
-        bunpou: { name: 'Bunpou', jp: 'æ–‡æ³•ãƒ»èª­è§£', icon: 'âœï¸', cls: 'bunpou' },
-        choukai: { name: 'Choukai', jp: 'è´è§£', icon: 'ðŸŽ§', cls: 'choukai' }
+        kanji: { name: 'Kanji', jp: 'かんじ', icon: '📖', cls: 'kanji' },
+        bunpou: { name: 'Bunpou', jp: 'ぶんぽう', icon: '✏️', cls: 'bunpou' },
+        choukai: { name: 'Choukai', jp: 'ちょうかい', icon: '🎧', cls: 'choukai' }
     };
 
     // â”€â”€ Load result data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -513,3 +513,81 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
+
+    // ── PDF Export (Using html2canvas for Perfect Typography) ────────
+    document.getElementById('downloadPdfBtn').addEventListener('click', async function() {
+        const btn = this;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span class="action-btn-icon">⏳</span><span class="action-btn-label">Generating...</span><span class="action-btn-sub">Please wait</span>';
+        btn.disabled = true;
+
+        try {
+            // Force scroll to top to ensure rendering works correctly
+            window.scrollTo(0, 0);
+
+            // We will render the body (excluding header and actions)
+            const header = document.querySelector('.result-header');
+            const actions = document.querySelector('.result-actions');
+            const qrModal = document.getElementById('qrModalBackdrop');
+            const tooltip = document.querySelector('.tips-quote'); // Hide temporary tooltips if needed
+            
+            if (header) header.style.display = 'none';
+            if (actions) actions.style.display = 'none';
+            if (qrModal) qrModal.classList.add('hidden');
+
+            // Wait a moment for styles to apply
+            await new Promise(r => setTimeout(r, 100));
+
+            const canvas = await html2canvas(document.body, {
+                scale: 2, // High resolution
+                useCORS: true,
+                backgroundColor: '#f8f9fb', // match body bg
+                logging: false,
+                windowWidth: 1200 // Force desktop width for PDF
+            });
+
+            if (header) header.style.display = '';
+            if (actions) actions.style.display = '';
+
+            const imgData = canvas.toDataURL('image/png', 1.0);
+            const { jsPDF } = window.jspdf;
+            
+            const pdf = new jsPDF({
+                orientation: 'portrait',
+                unit: 'mm',
+                format: 'a4'
+            });
+
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+            
+            const imgWidth = canvas.width;
+            const imgHeight = canvas.height;
+            const ratio = imgWidth / imgHeight;
+            
+            let finalWidth = pdfWidth;
+            let finalHeight = finalWidth / ratio;
+
+            // If the content is too long, we scale it to fit or allow multiple pages.
+            if (finalHeight > pdfHeight) {
+                finalHeight = pdfHeight;
+                finalWidth = finalHeight * ratio;
+            }
+
+            const x = (pdfWidth - finalWidth) / 2;
+            pdf.addImage(imgData, 'PNG', x, 0, finalWidth, finalHeight);
+
+            // Add result ID footer manually to the PDF
+            pdf.setFontSize(8);
+            pdf.setTextColor(150, 150, 150);
+            pdf.text(`Result ID: ${resultId}  |  Generated: ${new Date().toLocaleString()}`, 10, pdfHeight - 10);
+
+            pdf.save(`OMOSHIROI_JLPT_${level}_${user.name.replace(/\s+/g, '_')}_${resultId}.pdf`);
+        } catch (err) {
+            console.error('PDF Generation failed:', err);
+            alert('Failed to generate PDF. Please try again.');
+        } finally {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }
+    });
