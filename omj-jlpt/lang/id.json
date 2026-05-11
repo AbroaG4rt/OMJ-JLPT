@@ -1,0 +1,29 @@
+{
+    "auth": {
+        "required": "Anda harus login terlebih dahulu untuk mengakses halaman ini."
+    },
+    "security": {
+        "devtools": "Peringatan: Developer Tools terdeteksi.",
+        "context_switch": "Peringatan: Berpindah tab terdeteksi! Harap fokus pada ujian.",
+        "locked": "UJIAN TERKUNCI: Anda diblokir karena indikasi kecurangan. Menyimpan progres secara otomatis.",
+        "risk_high": "Risiko Tinggi",
+        "risk_suspicious": "Mencurigakan",
+        "risk_safe": "Aman"
+    },
+    "test": {
+        "time_remaining": "Sisa Waktu",
+        "timeout": "Ujian Dikirim Otomatis karena Batas Waktu Berakhir."
+    },
+    "result": {
+        "chart_correct": "Benar",
+        "chart_wrong": "Salah/Kosong",
+        "badge_master": "Master JLPT",
+        "badge_pass": "Terus Berjuang",
+        "badge_fail": "Jangan Menyerah",
+        "email_success": "Berhasil mengirim laporan ke Organisasi!",
+        "email_fail": "Gagal mengirim laporan. Pastikan Cloudflare Worker terhubung via /api/send",
+        "pdf_watermark": "tes omoshiroi japan",
+        "pdf_status_correct": "Benar",
+        "pdf_status_expected": "Seharusnya"
+    }
+}

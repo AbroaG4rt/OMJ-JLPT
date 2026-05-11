@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "kanji",
+      "title": "Kanji & Vocabulary",
+      "questions": [
+        {
+          "id": "N5-K-1",
+          "type": "image | reading",
+          "question": "Question text goes here",
+          "options": {
+            "A": "Option 1",
+            "B": "Option 2",
+            "C": "Option 3",
+            "D": "Option 4"
+          },
+          "correctAnswer": "A",
+          "image": "optional_image_url.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Level - OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="alternate" hreflang="id" href="level.html">
+    <link rel="alternate" hreflang="en" href="../en/level.html">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex items-center justify-between">
+            <a href="dashboard.html" class="brand"><img src="../assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 0.5rem;"> OMOSHIROI</a>
+            <nav class="nav-links">
+                <a href="dashboard.html">Batal</a>
+            </nav>
+            <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container text-center" style="max-width: 600px;">
+        <div class="card mt-2">
+            <h1 id="levelTitle">Memuat...</h1>
+            <p id="levelDesc" class="mb-2" style="color: var(--text-secondary);"></p>
+
+            <div style="background: var(--primary-light); padding: 1.5rem; border-radius: var(--radius); text-align: left; margin-bottom: 2rem;">
+                <h3 style="color: var(--danger-color); margin-bottom: 0.5rem;">⚠️ Peraturan Ujian</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-primary); font-size: 0.95rem;">
+                    <li>Waktu akan mulai berjalan saat kamu menekan tombol mulai ujian.</li>
+                    <li>Timer akan terus berjalan meskipun kamu menutup atau merefresh halaman.</li>
+                    <li>Selesaikan semua soal sebelum waktu habis.</li>
+                    <li>Jawaban tidak dapat diubah setelah ujian dikirim.</li>
+                </ul>
+            </div>
+
+            <button id="startTestBtn" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">MULAI UJIAN</button>
+        </div>
+    </main>
+
+    <script src="../assets/js/utils.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const level = urlParams.get('level') || 'N5';
+            
+            if (!OmoshiroiUtils.checkAccess(level)) {
+                alert("Silakan login untuk mengakses level ini.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            const levelInfo = {
+                "N5": "95 Soal • 120 Menit", "N4": "100 Soal • 125 Menit",
+                "N3": "130 Soal • 130 Menit", "N2": "135 Soal • 140 Menit",
+                "N1": "140 Soal • 150 Menit"
+            };
+            const minutes = parseInt(levelInfo[level].split('•')[1].trim().split(' ')[0]);
+            document.getElementById('levelTitle').textContent = `JLPT ${level}`;
+            document.getElementById('levelDesc').textContent = levelInfo[level];
+            document.getElementById('startTestBtn').addEventListener('click', () => {
+                const testState = {
+                    level: level, durationMinutes: minutes, answers: {},
+                    startTime: new Date().getTime(),
+                    endTime: new Date().getTime() + (minutes * 60 * 1000)
+                };
+                localStorage.setItem('omoshiroi_active_test', JSON.stringify(testState));
+                window.location.href = '../test.html';
+            });
+        });
+    </script>
+
+
+
+    <div class="nav-overlay" id="mobileNavOverlay"></div>
+</body></html>

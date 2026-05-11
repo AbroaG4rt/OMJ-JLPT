@@ -1,0 +1,40 @@
+[
+  {
+    "id": "DEMO-Q1",
+    "type": "reading",
+    "question": "DEMO - Q1: Apa arti dari <u>たべる</u> dalam bahasa Jepang?",
+    "options": {
+      "A": "Tidur",
+      "B": "Makan",
+      "C": "Minum",
+      "D": "Belajar"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "DEMO-Q2",
+    "type": "listening",
+    "question": "DEMO - Q2: Dengarkan audio berikut dan pilih gambar yang tepat.",
+    "audio": "hello.mp3",
+    "max_play": 2,
+    "options": {
+      "A": "Matahari",
+      "B": "Bulan",
+      "C": "Bintang",
+      "D": "Awan"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "DEMO-Q3",
+    "type": "image",
+    "question": "DEMO - Q3: Pilih gambar yang menunjukkan 'Mobil' (Kuruma) <u>くるま</u>.",
+    "options": [
+      { "label": "A", "image": "https://via.placeholder.com/150/ff0000/ffffff?text=Image+A" },
+      { "label": "B", "image": "https://via.placeholder.com/150/00ff00/ffffff?text=Image+B" },
+      { "label": "C", "image": "https://via.placeholder.com/150/0000ff/ffffff?text=Image+C" },
+      { "label": "D", "image": "https://via.placeholder.com/150/ffff00/ffffff?text=Image+D" }
+    ],
+    "correctAnswer": "C"
+  }
+]

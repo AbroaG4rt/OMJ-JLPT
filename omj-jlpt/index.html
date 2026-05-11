@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <style>body { margin: 0; background: #fafafa; }</style>
+</head>
+<body>
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang');
+            if (!lang) {
+                var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+                lang = browserLang.startsWith('id') ? 'id' : 'en';
+                localStorage.setItem('lang', lang);
+            }
+            window.location.replace(lang === 'id' ? 'id/index.html' : 'en/index.html');
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat - OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="alternate" hreflang="id" href="history.html">
+    <link rel="alternate" hreflang="en" href="../en/history.html">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .history-table th, .history-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .history-table th {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .analytics-card {
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        .analytics-value {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .btn-sm {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container flex items-center justify-between">
+            <a href="dashboard.html" class="brand"><img src="../assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 0.5rem;"> OMOSHIROI</a>
+            <nav class="nav-links">
+                <span id="userNameDisplay" style="font-weight: 600; color: var(--text-primary);"></span>
+                <a href="dashboard.html">Dasbor</a>
+                <a href="#" id="logoutBtn">Keluar</a>
+                <a href="../en/history.html" onclick="localStorage.setItem('lang','en')" style="font-size:0.85rem;">EN</a>
+            </nav>
+            <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="text-center mb-2">
+            <h1>Riwayat &amp; Analitik Tes</h1>
+            <p style="color: var(--text-secondary);">Lihat daftar performa Anda dan pantau kemajuan belajar.</p>
+        </div>
+
+        <div class="analytics-grid">
+            <div class="analytics-card">
+                <div style="font-size: 0.9rem; color: var(--text-secondary);">Total Ujian</div>
+                <div class="analytics-value" id="totalAttempts">0</div>
+            </div>
+            <div class="analytics-card">
+                <div style="font-size: 0.9rem; color: var(--text-secondary);">Skor Rata-rata</div>
+                <div class="analytics-value" id="avgScore">0%</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="overflow-x: auto;">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Level</th>
+                            <th>Skor</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/history.js"></script>
+
+
+
+    <div class="nav-overlay" id="mobileNavOverlay"></div>
+</body></html>

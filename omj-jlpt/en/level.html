@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Info - OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="alternate" hreflang="id" href="../id/level.html">
+    <link rel="alternate" hreflang="en" href="level.html">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex items-center justify-between">
+            <a href="dashboard.html" class="brand"><img src="../assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 0.5rem;"> OMOSHIROI</a>
+            <nav class="nav-links">
+                <a href="dashboard.html">Cancel</a>
+            </nav>
+            <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container text-center" style="max-width: 600px;">
+        <div class="card mt-2">
+            <h1 id="levelTitle">Loading...</h1>
+            <p id="levelDesc" class="mb-2" style="color: var(--text-secondary);"></p>
+
+            <div style="background: var(--primary-light); padding: 1.5rem; border-radius: var(--radius); text-align: left; margin-bottom: 2rem;">
+                <h3 style="color: var(--danger-color); margin-bottom: 0.5rem;">⚠️ Examination Rules</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-primary); font-size: 0.95rem;">
+                    <li>The timer starts when you click the Start button.</li>
+                    <li>The timer continues even if you close or refresh the page.</li>
+                    <li>Complete all questions before time runs out.</li>
+                    <li>Answers cannot be changed once the exam is submitted.</li>
+                </ul>
+            </div>
+
+            <button id="startTestBtn" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">START EXAMINATION</button>
+        </div>
+    </main>
+
+    <script src="../assets/js/utils.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const level = urlParams.get('level') || 'N5';
+            
+            if (!OmoshiroiUtils.checkAccess(level)) {
+                alert("Please login to access this level.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            const levelInfo = {
+                "N5": "95 Questions • 120 Minutes", "N4": "100 Questions • 125 Minutes",
+                "N3": "130 Questions • 130 Minutes", "N2": "135 Questions • 140 Minutes",
+                "N1": "140 Questions • 150 Minutes"
+            };
+            const minutes = parseInt(levelInfo[level].split('•')[1].trim().split(' ')[0]);
+            document.getElementById('levelTitle').textContent = `JLPT ${level}`;
+            document.getElementById('levelDesc').textContent = levelInfo[level];
+            document.getElementById('startTestBtn').addEventListener('click', () => {
+                const testState = {
+                    level: level, durationMinutes: minutes, answers: {},
+                    startTime: new Date().getTime(),
+                    endTime: new Date().getTime() + (minutes * 60 * 1000)
+                };
+                localStorage.setItem('omoshiroi_active_test', JSON.stringify(testState));
+                window.location.href = '../test.html';
+            });
+        });
+    </script>
+
+
+
+    <div class="nav-overlay" id="mobileNavOverlay"></div>
+</body></html>

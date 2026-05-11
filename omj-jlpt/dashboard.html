@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'id';
+            window.location.replace(lang === 'en' ? 'en/dashboard.html' : 'id/dashboard.html');
+        })();
+    <\/script>
+</body>
+</html>

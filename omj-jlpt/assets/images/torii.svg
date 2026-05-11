@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Kasagi (top curved rail) -->
+    <path d="M 10 40 Q 100 25 190 40 L 195 50 Q 100 35 5 50 Z" fill="#d13030"/>
+    
+    <!-- Shimaki (straight beam under Kasagi) -->
+    <rect x="15" y="50" width="170" height="12" fill="#bc2626"/>
+    
+    <!-- Hashira (pillars) -->
+    <path d="M 40 62 L 55 62 L 57 180 L 38 180 Z" fill="#d13030"/>
+    <path d="M 145 62 L 160 62 L 162 180 L 143 180 Z" fill="#d13030"/>
+    
+    <!-- Nuki (lower tie beam) -->
+    <rect x="25" y="110" width="150" height="12" fill="#d13030"/>
+
+    <!-- Gakuzuka (center strut) -->
+    <rect x="92" y="62" width="16" height="48" fill="#bc2626"/>
+    
+    <!-- Nuki Wedges -->
+    <rect x="20" y="108" width="10" height="16" fill="#8b1a1a"/>
+    <rect x="170" y="108" width="10" height="16" fill="#8b1a1a"/>
+    <rect x="62" y="108" width="8" height="16" fill="#8b1a1a"/>
+    <rect x="130" y="108" width="8" height="16" fill="#8b1a1a"/>
+</svg>

@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor - OMOSHIROI JAPAN</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="alternate" hreflang="id" href="dashboard.html">
+    <link rel="alternate" hreflang="en" href="../en/dashboard.html">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="brand"><img src="../assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 0.5rem;"> OMOSHIROI</a>
+            <nav class="nav-links">
+                <span id="guestLabel" class="hidden" style="font-size: 0.9rem; color: var(--surface); opacity: 0.8; font-style: italic;">Mode Tamu (Hanya N5)</span>
+                <span id="userNameDisplay" class="hidden" style="font-weight: 600; color: var(--background); display: flex; align-items: center; gap: 0.5rem;"></span>
+                <a href="history.html">Riwayat</a>
+                <a href="login.html" id="loginBtn" class="btn btn-primary btn-sm hidden" style="padding: 0.4rem 1rem;">Login</a>
+                <a href="#" id="logoutBtn" class="hidden">Keluar</a>
+                <a href="../en/dashboard.html" onclick="localStorage.setItem('lang','en')" style="font-size:0.85rem; padding-left: 0.5rem; border-left: 1px solid var(--border-color);">EN</a>
+            </nav>
+            <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="text-center mb-2">
+            <h1>Pilih Level Ujian</h1>
+            <p style="color: var(--text-secondary);" id="quoteDisplay">「千里の道も一歩から」— Perjalanan seribu mil dimulai dari satu langkah.</p>
+        </div>
+
+        <div class="level-grid mb-2">
+            <div class="card level-card" onclick="selectLevel('N5')">
+                <div class="level-title">N5</div>
+                <div>Dasar<br><span style="font-size: 0.85rem; color: var(--text-secondary);">95 Soal | 120 Menit</span></div>
+            </div>
+            <div class="card level-card" onclick="selectLevel('N4')">
+                <div class="level-title">N4</div>
+                <div>Elementer<br><span style="font-size: 0.85rem; color: var(--text-secondary);">100 Soal | 125 Menit</span></div>
+            </div>
+            <div class="card level-card" onclick="selectLevel('N3')">
+                <div class="level-title">N3</div>
+                <div>Menengah<br><span style="font-size: 0.85rem; color: var(--text-secondary);">130 Soal | 130 Menit</span></div>
+            </div>
+            <div class="card level-card" onclick="selectLevel('N2')">
+                <div class="level-title">N2</div>
+                <div>Pra-Lanjut<br><span style="font-size: 0.85rem; color: var(--text-secondary);">135 Soal | 140 Menit</span></div>
+            </div>
+            <div class="card level-card" onclick="selectLevel('N1')">
+                <div class="level-title">N1</div>
+                <div>Mahir<br><span style="font-size: 0.85rem; color: var(--text-secondary);">140 Soal | 150 Menit</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Riwayat Ujian</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Performa ujian terakhir Anda.</p>
+            <div id="historyContainer">
+                <p style="color: var(--text-secondary); font-style: italic;">Belum ada riwayat tes.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script>
+        function selectLevel(lvl) {
+            window.location.href = 'level.html?level=' + lvl;
+        }
+    </script>
+
+
+
+    <div class="nav-overlay" id="mobileNavOverlay"></div>
+</body></html>

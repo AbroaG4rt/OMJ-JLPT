@@ -1,0 +1,29 @@
+{
+    "auth": {
+        "required": "You must be logged in to view this page."
+    },
+    "security": {
+        "devtools": "Warning: Developer Tools active.",
+        "context_switch": "Warning: Context switch detected! Please remain focused on the exam.",
+        "locked": "EXAMINATION LOCKED: You have been blocked for cheating. Auto-submitting current progress.",
+        "risk_high": "High Risk",
+        "risk_suspicious": "Suspicious",
+        "risk_safe": "Safe"
+    },
+    "test": {
+        "time_remaining": "Time Remaining",
+        "timeout": "Exam Auto-Submitted due to Time Limit."
+    },
+    "result": {
+        "chart_correct": "Correct",
+        "chart_wrong": "Wrong/Unanswered",
+        "badge_master": "JLPT Master",
+        "badge_pass": "Keep Going",
+        "badge_fail": "Don't Give Up",
+        "email_success": "Successfully submitted report to Organization!",
+        "email_fail": "Failed to send report. Ensure Cloudflare Worker is connected via /api/send",
+        "pdf_watermark": "test omoshiroi japan",
+        "pdf_status_correct": "Correct",
+        "pdf_status_expected": "Expected"
+    }
+}

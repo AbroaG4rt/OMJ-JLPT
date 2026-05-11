@@ -1,0 +1,1748 @@
+{
+  "sections": [
+    {
+      "id": "kanji",
+      "title": "文字・語彙 (Kanji & Vocabulary)",
+      "questions": [
+        {
+          "id": "N1-K-1",
+          "type": "reading",
+          "question": "N1 Kanji - Q1: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-2",
+          "type": "image",
+          "question": "N1 Kanji - Q2: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-3",
+          "type": "reading",
+          "question": "N1 Kanji - Q3: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-4",
+          "type": "reading",
+          "question": "N1 Kanji - Q4: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-5",
+          "type": "reading",
+          "question": "N1 Kanji - Q5: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-6",
+          "type": "reading",
+          "question": "N1 Kanji - Q6: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-7",
+          "type": "reading",
+          "question": "N1 Kanji - Q7: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-8",
+          "type": "reading",
+          "question": "N1 Kanji - Q8: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-9",
+          "type": "reading",
+          "question": "N1 Kanji - Q9: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-10",
+          "type": "reading",
+          "question": "N1 Kanji - Q10: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-11",
+          "type": "reading",
+          "question": "N1 Kanji - Q11: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-12",
+          "type": "reading",
+          "question": "N1 Kanji - Q12: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-13",
+          "type": "image",
+          "question": "N1 Kanji - Q13: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-14",
+          "type": "reading",
+          "question": "N1 Kanji - Q14: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-15",
+          "type": "reading",
+          "question": "N1 Kanji - Q15: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-16",
+          "type": "reading",
+          "question": "N1 Kanji - Q16: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-17",
+          "type": "reading",
+          "question": "N1 Kanji - Q17: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-18",
+          "type": "image",
+          "question": "N1 Kanji - Q18: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-19",
+          "type": "reading",
+          "question": "N1 Kanji - Q19: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-20",
+          "type": "image",
+          "question": "N1 Kanji - Q20: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-21",
+          "type": "image",
+          "question": "N1 Kanji - Q21: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-22",
+          "type": "reading",
+          "question": "N1 Kanji - Q22: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-23",
+          "type": "reading",
+          "question": "N1 Kanji - Q23: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-24",
+          "type": "reading",
+          "question": "N1 Kanji - Q24: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-25",
+          "type": "image",
+          "question": "N1 Kanji - Q25: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-26",
+          "type": "reading",
+          "question": "N1 Kanji - Q26: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-27",
+          "type": "reading",
+          "question": "N1 Kanji - Q27: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-28",
+          "type": "image",
+          "question": "N1 Kanji - Q28: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-29",
+          "type": "reading",
+          "question": "N1 Kanji - Q29: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-30",
+          "type": "reading",
+          "question": "N1 Kanji - Q30: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-31",
+          "type": "reading",
+          "question": "N1 Kanji - Q31: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-32",
+          "type": "reading",
+          "question": "N1 Kanji - Q32: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-33",
+          "type": "reading",
+          "question": "N1 Kanji - Q33: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-34",
+          "type": "reading",
+          "question": "N1 Kanji - Q34: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-35",
+          "type": "reading",
+          "question": "N1 Kanji - Q35: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-36",
+          "type": "reading",
+          "question": "N1 Kanji - Q36: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-37",
+          "type": "reading",
+          "question": "N1 Kanji - Q37: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-38",
+          "type": "image",
+          "question": "N1 Kanji - Q38: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-39",
+          "type": "reading",
+          "question": "N1 Kanji - Q39: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-40",
+          "type": "reading",
+          "question": "N1 Kanji - Q40: Fill in the correct kanji: ___曜日",
+          "options": {
+            "A": "月",
+            "B": "犬",
+            "C": "猫",
+            "D": "空"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-K-41",
+          "type": "image",
+          "question": "N1 Kanji - Q41: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-42",
+          "type": "image",
+          "question": "N1 Kanji - Q42: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-43",
+          "type": "image",
+          "question": "N1 Kanji - Q43: Is this correct kanji for water? 水",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Maybe",
+            "D": "Unknown"
+          },
+          "correctAnswer": "A",
+          "image": "water.jpg"
+        },
+        {
+          "id": "N1-K-44",
+          "type": "reading",
+          "question": "N1 Kanji - Q44: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": "N1-K-45",
+          "type": "reading",
+          "question": "N1 Kanji - Q45: What does '先生 (Sensei)' mean?",
+          "options": {
+            "A": "Student",
+            "B": "School",
+            "C": "Teacher",
+            "D": "Doctor"
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "id": "bunpou",
+      "title": "文法・読解 (Grammar & Reading)",
+      "questions": [
+        {
+          "id": "N1-B-1",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q1: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-2",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q2: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-3",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q3: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-4",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q4: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-5",
+          "type": "reading",
+          "question": "N1 Bunpou - Q5: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-6",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q6: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-7",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q7: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-8",
+          "type": "reading",
+          "question": "N1 Bunpou - Q8: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-9",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q9: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-10",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q10: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-11",
+          "type": "reading",
+          "question": "N1 Bunpou - Q11: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-12",
+          "type": "reading",
+          "question": "N1 Bunpou - Q12: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-13",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q13: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-14",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q14: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-15",
+          "type": "reading",
+          "question": "N1 Bunpou - Q15: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-16",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q16: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-17",
+          "type": "reading",
+          "question": "N1 Bunpou - Q17: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-18",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q18: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-19",
+          "type": "reading",
+          "question": "N1 Bunpou - Q19: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-20",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q20: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-21",
+          "type": "reading",
+          "question": "N1 Bunpou - Q21: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-22",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q22: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-23",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q23: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-24",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q24: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-25",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q25: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-26",
+          "type": "reading",
+          "question": "N1 Bunpou - Q26: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-27",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q27: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-28",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q28: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-29",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q29: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-30",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q30: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-31",
+          "type": "reading",
+          "question": "N1 Bunpou - Q31: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-32",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q32: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-33",
+          "type": "reading",
+          "question": "N1 Bunpou - Q33: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-34",
+          "type": "reading",
+          "question": "N1 Bunpou - Q34: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-35",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q35: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-36",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q36: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-37",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q37: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-38",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q38: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-39",
+          "type": "reading",
+          "question": "N1 Bunpou - Q39: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-40",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q40: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-41",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q41: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-42",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q42: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-43",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q43: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-44",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q44: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-45",
+          "type": "reading",
+          "question": "N1 Bunpou - Q45: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-46",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q46: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-47",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q47: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-48",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q48: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-49",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q49: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-50",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q50: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-51",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q51: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-52",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q52: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-53",
+          "type": "reading",
+          "question": "N1 Bunpou - Q53: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-54",
+          "type": "reading",
+          "question": "N1 Bunpou - Q54: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-55",
+          "type": "reading",
+          "question": "N1 Bunpou - Q55: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-56",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q56: Choose the correct translation: 'I eat apple.'",
+          "options": {
+            "A": "りんごを食べます。",
+            "B": "りんごが食べます。",
+            "C": "りんごに食べます。",
+            "D": "りんごは食べます。"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-57",
+          "type": "reading",
+          "question": "N1 Bunpou - Q57: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-58",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q58: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-59",
+          "type": "grammar",
+          "question": "N1 Bunpou - Q59: Which particle is correct? 本_読みます。",
+          "options": {
+            "A": "を",
+            "B": "が",
+            "C": "は",
+            "D": "と"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "id": "N1-B-60",
+          "type": "reading",
+          "question": "N1 Bunpou - Q60: Fill in the blank: 私_学生です。",
+          "options": {
+            "A": "は",
+            "B": "が",
+            "C": "を",
+            "D": "に"
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "choukai",
+      "title": "聴解 (Listening)",
+      "questions": [
+        {
+          "id": "N1-C-1",
+          "type": "listening",
+          "question": "N1 Choukai - Q1: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-2",
+          "type": "listening",
+          "question": "N1 Choukai - Q2: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-3",
+          "type": "listening",
+          "question": "N1 Choukai - Q3: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-4",
+          "type": "listening",
+          "question": "N1 Choukai - Q4: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-5",
+          "type": "listening",
+          "question": "N1 Choukai - Q5: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-6",
+          "type": "listening",
+          "question": "N1 Choukai - Q6: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-7",
+          "type": "listening",
+          "question": "N1 Choukai - Q7: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-8",
+          "type": "listening",
+          "question": "N1 Choukai - Q8: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-9",
+          "type": "listening",
+          "question": "N1 Choukai - Q9: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-10",
+          "type": "listening",
+          "question": "N1 Choukai - Q10: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-11",
+          "type": "listening",
+          "question": "N1 Choukai - Q11: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-12",
+          "type": "listening",
+          "question": "N1 Choukai - Q12: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-13",
+          "type": "listening",
+          "question": "N1 Choukai - Q13: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-14",
+          "type": "listening",
+          "question": "N1 Choukai - Q14: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-15",
+          "type": "listening",
+          "question": "N1 Choukai - Q15: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-16",
+          "type": "listening",
+          "question": "N1 Choukai - Q16: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-17",
+          "type": "listening",
+          "question": "N1 Choukai - Q17: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-18",
+          "type": "listening",
+          "question": "N1 Choukai - Q18: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-19",
+          "type": "listening",
+          "question": "N1 Choukai - Q19: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-20",
+          "type": "listening",
+          "question": "N1 Choukai - Q20: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-21",
+          "type": "listening",
+          "question": "N1 Choukai - Q21: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-22",
+          "type": "listening",
+          "question": "N1 Choukai - Q22: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-23",
+          "type": "listening",
+          "question": "N1 Choukai - Q23: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-24",
+          "type": "listening",
+          "question": "N1 Choukai - Q24: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-25",
+          "type": "listening",
+          "question": "N1 Choukai - Q25: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-26",
+          "type": "listening",
+          "question": "N1 Choukai - Q26: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-27",
+          "type": "listening",
+          "question": "N1 Choukai - Q27: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-28",
+          "type": "listening",
+          "question": "N1 Choukai - Q28: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-29",
+          "type": "listening",
+          "question": "N1 Choukai - Q29: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-30",
+          "type": "listening",
+          "question": "N1 Choukai - Q30: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-31",
+          "type": "listening",
+          "question": "N1 Choukai - Q31: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-32",
+          "type": "listening",
+          "question": "N1 Choukai - Q32: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-33",
+          "type": "listening",
+          "question": "N1 Choukai - Q33: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-34",
+          "type": "listening",
+          "question": "N1 Choukai - Q34: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        },
+        {
+          "id": "N1-C-35",
+          "type": "listening",
+          "question": "N1 Choukai - Q35: Listen to the audio and find the meaning.",
+          "options": {
+            "A": "Hello",
+            "B": "Goodbye",
+            "C": "Thank you",
+            "D": "Sorry"
+          },
+          "correctAnswer": "A",
+          "audio": "hello.mp3"
+        }
+      ]
+    }
+  ]
+}

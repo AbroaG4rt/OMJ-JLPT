@@ -1,0 +1,6 @@
+[
+  { "name": "Satoshi Nakamoto", "password": "pwd123", "role": "premium" },
+  { "name": "Test User", "password": "123", "role": "premium" },
+  { "name": "omoshiroi_guest", "password": "guest123", "role": "guest" },
+  { "name": "Admin", "password": "admin2024", "role": "premium" }
+]

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The best online JLPT simulation platform to prepare for your Japanese proficiency exam, N5 to N1.">
+    <title>OMOSHIROI JAPAN - JLPT Simulation Platform</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="alternate" hreflang="id" href="../id/index.html">
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .hero { text-align: center; padding: 6rem 1rem 4rem; }
+        .hero-title { font-size: 3.5rem; color: var(--primary-color); margin-bottom: 1rem; line-height: 1.2; }
+        .hero-subtitle { font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 2rem 0; }
+        .feature-card { text-align: center; padding: 2rem; border-radius: var(--radius); background: var(--paper-bg); border: 1px solid var(--border-color); box-shadow: var(--shadow-soft); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container flex items-center justify-between" style="padding: 0.5rem 1.5rem;">
+            <a href="index.html" class="brand"><img src="../assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 0.5rem;"> OMOSHIROI</a>
+            <nav class="nav-links">
+                <a href="login.html" class="btn btn-outline" style="padding: 0.4rem 1.5rem; font-size: 0.9rem;">Login</a>
+                <a href="../id/index.html" onclick="localStorage.setItem('lang','id')" style="font-size:0.85rem; margin-left:0.5rem;">ID</a>
+            </nav>
+            <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="hero-title">Master the JLPT</h1>
+            <p class="hero-subtitle">A premium, serverless simulation platform designed to test your Japanese proficiency with elegance and precision.</p>
+            <a href="login.html" class="btn btn-primary" style="font-size: 1.25rem; padding: 1rem 3rem;">Start Testing Today</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Strict Simulation</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Experience real exam conditions with persistent timers customized for each level (N5–N1).</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Instant Analytics</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Get immediate visual feedback on your performance with dynamic charts and progress badges.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>Automated Reports</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Generate watermarked PDF certificates on the client and submit them seamlessly to the cloud.</p>
+            </div>
+        </section>
+
+        <div class="text-center" style="margin-top: 4rem; color: var(--text-secondary); font-size: 0.85rem;">
+            © 2026 Omoshiroi Japan Testing Platform. Crafted with plain web standards.
+        </div>
+    </main>
+
+    <script src="../assets/js/utils.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            localStorage.setItem('lang', 'en');
+            if (OmoshiroiUtils.getUser()) window.location.href = 'dashboard.html';
+        });
+    </script>
+
+
+
+    <div class="nav-overlay" id="mobileNavOverlay"></div>
+</body></html>
