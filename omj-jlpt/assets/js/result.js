@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         choukai: { name: 'Choukai', jp: 'ちょうかい', icon: '🎧', cls: 'choukai' }
     };
 
-    // â”€â”€ Load result data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Load result data 
     let user = OmoshiroiUtils.getUser();
     if (!user) user = { name: 'Trial Guest', role: 'guest' };
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const { level, answers, timestamp } = resultData;
 
-    // â”€â”€ Fetch question data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Fetch question data
     let rawData;
     try {
         const res = await fetch(`../data/${level}.json`);
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const allQuestions = sections.flatMap(s => s.questions);
     const totalCount = allQuestions.length;
 
-    // â”€â”€ Score per section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Score per section
     let totalCorrect = 0;
     const sectionStats = {};
     const evaluation = [];
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const totalScore = totalCount > 0 ? (totalCorrect / totalCount) * 100 : 0;
 
-    // â”€â”€ Save history â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Save history
     if (!isHistoricalView) {
         const testId = `${level}-${timestamp}`;
         const robustResult = {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!history.find(h => h.test_id === testId)) OmoshiroiUtils.saveResult(user, robustResult);
     }
 
-    // â”€â”€ Populate Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Populate Hero
     document.getElementById('levelBadge').textContent = level;
     document.getElementById('totalScorePct').textContent = `${totalScore.toFixed(1)}%`;
     document.getElementById('totalFraction').textContent = `${totalCorrect} / ${totalCount}`;
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (totalScore >= 50) { verdictBadge.textContent = '~ Keep Going'; verdictBadge.className = 'verdict-badge verdict-avg'; }
     else { verdictBadge.textContent = 'âœ— Needs Practice'; verdictBadge.className = 'verdict-badge verdict-fail'; }
 
-    // â”€â”€ Section Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Section Cards
     const grid = document.getElementById('sectionCardsGrid');
     const sectionOrder = ['kanji', 'bunpou', 'choukai'];
     const circumSmall = 2 * Math.PI * 44; // r=44
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 300 + idx * 200);
     });
 
-    // â”€â”€ Overall Chart â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Overall Chart
     const ctx = document.getElementById('resultChart').getContext('2d');
     new Chart(ctx, {
         type: 'doughnut',
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }, 400);
 
-    // â”€â”€ Motivational Tips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Motivational Tips
     let feedbackKey = 'beginner';
     if (totalScore >= 80) feedbackKey = 'excellent';
     else if (totalScore >= 60) feedbackKey = 'good';
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         tipsGrid.appendChild(el);
     });
 
-    // â”€â”€ Result ID & QR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Result ID & QR
     const resultId = `OJ-${level}-${timestamp.toString(36).toUpperCase().slice(-8)}`;
     document.getElementById('resultIdText').textContent = `Result ID: ${resultId}`;
 
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 colorDark: '#1A2035', colorLight: '#ffffff',
                 correctLevel: QRCode.CorrectLevel.H
             });
-        } catch(e) { console.warn('QR generation failed:', e); }
+        } catch (e) { console.warn('QR generation failed:', e); }
     }
 
     document.getElementById('shareQrBtn').addEventListener('click', () => {
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.location.href = `level.html?level=${level}`;
     });
 
-    // â”€â”€ PDF Export (ASCII-safe â€” jsPDF Helvetica does not support CJK) â”€â”€â”€â”€â”€â”€â”€â”€
+    // PDF Export (ASCII-safe jsPDF Helvetica does not support CJK)
     document.getElementById('downloadPdfBtn').addEventListener('click', async () => {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF({ unit: 'mm', format: 'a4', putOnlyUsedFonts: true });
@@ -352,14 +352,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const ph = doc.internal.pageSize.getHeight();
         const M = 18;
 
-        // â”€ Load logo â”€
+        // Load logo
         const logo = new Image();
         logo.crossOrigin = 'anonymous';
         logo.src = '../assets/images/logo.png';
         await new Promise(r => { logo.onload = r; logo.onerror = r; });
         const hasLogo = logo.complete && logo.naturalHeight !== 0;
 
-        // â”€ Background watermark â”€
+        // Background watermark
         if (hasLogo) {
             doc.saveGraphicsState();
             doc.setGState(new doc.GState({ opacity: 0.07 }));
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             doc.restoreGraphicsState();
         }
 
-        // â”€ Header bar â”€
+        // Header bar
         doc.setFillColor(26, 32, 53);
         doc.rect(0, 0, pw, 28, 'F');
         doc.setTextColor(255, 255, 255);
@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         doc.setDrawColor(220, 220, 220);
         doc.roundedRect(M, y, pw - M * 2, 26, 4, 4, 'FD');
 
-        const [sr, sg, sb] = totalScore >= 70 ? [46,204,113] : totalScore >= 50 ? [243,156,18] : [231,76,60];
+        const [sr, sg, sb] = totalScore >= 70 ? [46, 204, 113] : totalScore >= 50 ? [243, 156, 18] : [231, 76, 60];
         doc.setTextColor(sr, sg, sb);
         doc.setFontSize(26); doc.setFont('helvetica', 'bold');
         doc.text(`${totalScore.toFixed(1)}%`, M + 7, y + 17);
@@ -416,9 +416,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // ASCII-only labels (jsPDF Helvetica = Latin only, no CJK)
         const pdfSecMeta = {
-            kanji:   { label: 'Kanji  (Moji & Goi)',        col: [67, 97, 238]  },
-            bunpou:  { label: 'Bunpou (Grammar & Reading)',  col: [114, 9, 183]  },
-            choukai: { label: 'Choukai (Listening)',         col: [231, 54, 120] }
+            kanji: { label: 'Kanji  (Moji & Goi)', col: [67, 97, 238] },
+            bunpou: { label: 'Bunpou (Grammar & Reading)', col: [114, 9, 183] },
+            choukai: { label: 'Choukai (Listening)', col: [231, 54, 120] }
         };
 
         ['kanji', 'bunpou', 'choukai'].forEach(secId => {
@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 doc.addImage(qrCanvas.toDataURL('image/png'), 'PNG', pw - M - 25, fy + 3, 22, 22);
                 doc.setFontSize(6.5); doc.setFont('helvetica', 'normal'); doc.setTextColor(150, 150, 150);
                 doc.text('Scan to verify', pw - M - 14, fy + 27, { align: 'center' });
-            } catch(e) { console.warn('QR embed failed:', e); }
+            } catch (e) { console.warn('QR embed failed:', e); }
         }
 
         // Footer text (ASCII-safe em dash replacement)
@@ -514,80 +514,80 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
-    // ── PDF Export (Using html2canvas for Perfect Typography) ────────
-    document.getElementById('downloadPdfBtn').addEventListener('click', async function() {
-        const btn = this;
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<span class="action-btn-icon">⏳</span><span class="action-btn-label">Generating...</span><span class="action-btn-sub">Please wait</span>';
-        btn.disabled = true;
+// ── PDF Export (Using html2canvas for Perfect Typography) ────────
+document.getElementById('downloadPdfBtn').addEventListener('click', async function () {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="action-btn-icon">⏳</span><span class="action-btn-label">Generating...</span><span class="action-btn-sub">Please wait</span>';
+    btn.disabled = true;
 
-        try {
-            // Force scroll to top to ensure rendering works correctly
-            window.scrollTo(0, 0);
+    try {
+        // Force scroll to top to ensure rendering works correctly
+        window.scrollTo(0, 0);
 
-            // We will render the body (excluding header and actions)
-            const header = document.querySelector('.result-header');
-            const actions = document.querySelector('.result-actions');
-            const qrModal = document.getElementById('qrModalBackdrop');
-            const tooltip = document.querySelector('.tips-quote'); // Hide temporary tooltips if needed
-            
-            if (header) header.style.display = 'none';
-            if (actions) actions.style.display = 'none';
-            if (qrModal) qrModal.classList.add('hidden');
+        // We will render the body (excluding header and actions)
+        const header = document.querySelector('.result-header');
+        const actions = document.querySelector('.result-actions');
+        const qrModal = document.getElementById('qrModalBackdrop');
+        const tooltip = document.querySelector('.tips-quote'); // Hide temporary tooltips if needed
 
-            // Wait a moment for styles to apply
-            await new Promise(r => setTimeout(r, 100));
+        if (header) header.style.display = 'none';
+        if (actions) actions.style.display = 'none';
+        if (qrModal) qrModal.classList.add('hidden');
 
-            const canvas = await html2canvas(document.body, {
-                scale: 2, // High resolution
-                useCORS: true,
-                backgroundColor: '#f8f9fb', // match body bg
-                logging: false,
-                windowWidth: 1200 // Force desktop width for PDF
-            });
+        // Wait a moment for styles to apply
+        await new Promise(r => setTimeout(r, 100));
 
-            if (header) header.style.display = '';
-            if (actions) actions.style.display = '';
+        const canvas = await html2canvas(document.body, {
+            scale: 2, // High resolution
+            useCORS: true,
+            backgroundColor: '#f8f9fb', // match body bg
+            logging: false,
+            windowWidth: 1200 // Force desktop width for PDF
+        });
 
-            const imgData = canvas.toDataURL('image/png', 1.0);
-            const { jsPDF } = window.jspdf;
-            
-            const pdf = new jsPDF({
-                orientation: 'portrait',
-                unit: 'mm',
-                format: 'a4'
-            });
+        if (header) header.style.display = '';
+        if (actions) actions.style.display = '';
 
-            const pdfWidth = pdf.internal.pageSize.getWidth();
-            const pdfHeight = pdf.internal.pageSize.getHeight();
-            
-            const imgWidth = canvas.width;
-            const imgHeight = canvas.height;
-            const ratio = imgWidth / imgHeight;
-            
-            let finalWidth = pdfWidth;
-            let finalHeight = finalWidth / ratio;
+        const imgData = canvas.toDataURL('image/png', 1.0);
+        const { jsPDF } = window.jspdf;
 
-            // If the content is too long, we scale it to fit or allow multiple pages.
-            if (finalHeight > pdfHeight) {
-                finalHeight = pdfHeight;
-                finalWidth = finalHeight * ratio;
-            }
+        const pdf = new jsPDF({
+            orientation: 'portrait',
+            unit: 'mm',
+            format: 'a4'
+        });
 
-            const x = (pdfWidth - finalWidth) / 2;
-            pdf.addImage(imgData, 'PNG', x, 0, finalWidth, finalHeight);
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = pdf.internal.pageSize.getHeight();
 
-            // Add result ID footer manually to the PDF
-            pdf.setFontSize(8);
-            pdf.setTextColor(150, 150, 150);
-            pdf.text(`Result ID: ${resultId}  |  Generated: ${new Date().toLocaleString()}`, 10, pdfHeight - 10);
+        const imgWidth = canvas.width;
+        const imgHeight = canvas.height;
+        const ratio = imgWidth / imgHeight;
 
-            pdf.save(`OMOSHIROI_JLPT_${level}_${user.name.replace(/\s+/g, '_')}_${resultId}.pdf`);
-        } catch (err) {
-            console.error('PDF Generation failed:', err);
-            alert('Failed to generate PDF. Please try again.');
-        } finally {
-            btn.innerHTML = originalText;
-            btn.disabled = false;
+        let finalWidth = pdfWidth;
+        let finalHeight = finalWidth / ratio;
+
+        // If the content is too long, we scale it to fit or allow multiple pages.
+        if (finalHeight > pdfHeight) {
+            finalHeight = pdfHeight;
+            finalWidth = finalHeight * ratio;
         }
-    });
+
+        const x = (pdfWidth - finalWidth) / 2;
+        pdf.addImage(imgData, 'PNG', x, 0, finalWidth, finalHeight);
+
+        // Add result ID footer manually to the PDF
+        pdf.setFontSize(8);
+        pdf.setTextColor(150, 150, 150);
+        pdf.text(`Result ID: ${resultId}  |  Generated: ${new Date().toLocaleString()}`, 10, pdfHeight - 10);
+
+        pdf.save(`OMOSHIROI_JLPT_${level}_${user.name.replace(/\s+/g, '_')}_${resultId}.pdf`);
+    } catch (err) {
+        console.error('PDF Generation failed:', err);
+        alert('Failed to generate PDF. Please try again.');
+    } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    }
+});
