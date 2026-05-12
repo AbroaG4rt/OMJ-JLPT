@@ -7,47 +7,47 @@ document.addEventListener('DOMContentLoaded', async () => {
     // â”€â”€ Motivational Feedback Engine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     const FEEDBACK = {
         excellent: {
-            icon: 'ðŸ†', title: 'Outstanding Performance!',
-            quote: 'åŠªåŠ›ã¯å¿…ãšå ±ã‚ã‚Œã‚‹ â€” Hard work always pays off. Your dedication to Japanese study is truly remarkable. Keep this momentum going!',
+            icon: '🦋', title: 'Outstanding Performance!',
+            quote: '” Hard work always pays off. Your dedication to Japanese study is truly remarkable. Keep this momentum going!',
             tips: [
-                { icon: 'ðŸŽ¯', title: 'Maintain Your Edge', text: 'Challenge yourself with higher difficulty N-level questions and past official JLPT papers to stay sharp.' },
-                { icon: 'ðŸ“š', title: 'Deep Dive Reading', text: 'Read native Japanese content â€” newspapers, manga, light novels â€” to reinforce your skills naturally.' },
-                { icon: 'ðŸ—£ï¸', title: 'Speaking Practice', text: 'Convert your exam knowledge into real conversation. Find a language partner or use platforms like HelloTalk.' }
+                { icon: '⚪¯', title: 'Maintain Your Edge', text: 'Challenge yourself with higher difficulty N-level questions and past official JLPT papers to stay sharp.' },
+                { icon: '⚫', title: 'Deep Dive Reading', text: 'Read native Japanese content â€” newspapers, manga, light novels â€” to reinforce your skills naturally.' },
+                { icon: '🟠', title: 'Speaking Practice', text: 'Convert your exam knowledge into real conversation. Find a language partner or use platforms like HelloTalk.' }
             ]
         },
         good: {
-            icon: 'ðŸŒ¸', title: 'Great Progress!',
-            quote: 'ä¸€æ­©ä¸€æ­© â€” Step by step. You\'re making genuine progress. Each study session brings you closer to your JLPT goal.',
+            icon: '📌¸', title: 'Great Progress!',
+            quote: '” Step by step. You\'re making genuine progress. Each study session brings you closer to your JLPT goal.',
             tips: [
-                { icon: 'ðŸ”', title: 'Review Weak Sections', text: 'Focus extra study time on the sections where you scored below 60%. Targeted practice yields the fastest gains.' },
-                { icon: 'â±ï¸', title: 'Timed Practice', text: 'Practice answering under exam time conditions to improve your speed and reduce second-guessing.' },
-                { icon: 'ðŸ“', title: 'Keep a Mistake Journal', text: 'Write down questions you got wrong and why. Reviewing your mistakes is the #1 most effective study method.' }
+                { icon: '🟣' , title: 'Review Weak Sections', text: 'Focus extra study time on the sections where you scored below 60%. Targeted practice yields the fastest gains.' },
+                { icon: '🔵', title: 'Timed Practice', text: 'Practice answering under exam time conditions to improve your speed and reduce second-guessing.' },
+                { icon: '🟢', title: 'Keep a Mistake Journal', text: 'Write down questions you got wrong and why. Reviewing your mistakes is the #1 most effective study method.' }
             ]
         },
         average: {
-            icon: 'ðŸŒ±', title: 'You\'re Growing!',
-            quote: 'å¤±æ•—ã¯æˆåŠŸã®ã‚‚ã¨ â€” Failure is the foundation of success. Every attempt is data. Every mistake is a lesson in disguise.',
+            icon: '🪜', title: 'You\'re Growing!',
+            quote: '” Failure is the foundation of success. Every attempt is data. Every mistake is a lesson in disguise.',
             tips: [
-                { icon: 'ðŸ“–', title: 'Build Your Foundation', text: 'Focus on the core vocabulary and grammar patterns for your JLPT level. A strong foundation makes everything else easier.' },
-                { icon: 'ðŸŽ§', title: 'Daily Listening', text: 'Listen to Japanese for at least 20 minutes daily â€” podcasts, anime, or YouTube. Immersion dramatically improves Choukai scores.' },
-                { icon: 'ðŸƒ', title: 'Flashcard System', text: 'Use Anki or similar spaced-repetition tools for vocabulary and kanji. 30 cards a day = over 10,000 words in a year.' }
+                { icon: '🟡', title: 'Build Your Foundation', text: 'Focus on the core vocabulary and grammar patterns for your JLPT level. A strong foundation makes everything else easier.' },
+                { icon: '🟣', title: 'Daily Listening', text: 'Listen to Japanese for at least 20 minutes daily â€” podcasts, anime, or YouTube. Immersion dramatically improves Choukai scores.' },
+                { icon: '🔴', title: 'Flashcard System', text: 'Use Anki or similar spaced-repetition tools for vocabulary and kanji. 30 cards a day = over 10,000 words in a year.' }
             ]
         },
         beginner: {
-            icon: 'ðŸŒŸ', title: 'Every Expert Starts Here',
-            quote: 'åƒé‡Œã®é“ã‚‚ä¸€æ­©ã‹ã‚‰ â€” A journey of a thousand miles begins with a single step. You\'ve taken that step today. That matters more than the score.',
+            icon: '🐛', title: 'Every Expert Starts Here',
+            quote: '” A journey of a thousand miles begins with a single step. You\'ve taken that step today. That matters more than the score.',
             tips: [
-                { icon: 'ðŸŽŒ', title: 'Start with the Basics', text: 'Master hiragana and katakana first. These are the building blocks of everything. Apps like Duolingo or Tofugu can help.' },
-                { icon: 'ðŸ“…', title: 'Consistency Over Intensity', text: 'Study 20 minutes daily rather than 4 hours once a week. Consistency is the true secret to language acquisition.' },
-                { icon: 'ðŸ¤', title: 'Join a Community', text: 'Connect with other JLPT learners on Reddit (r/LearnJapanese), Discord servers, or local study groups for motivation.' }
+                { icon: '🟣', title: 'Start with the Basics', text: 'Master hiragana and katakana first. These are the building blocks of everything. Apps like Duolingo or Tofugu can help.' },
+                { icon: '🟡', title: 'Consistency Over Intensity', text: 'Study 20 minutes daily rather than 4 hours once a week. Consistency is the true secret to language acquisition.' },
+                { icon: '🟢', title: 'Join a Community', text: 'Connect with other JLPT learners on Reddit (r/LearnJapanese), Discord servers, or local study groups for motivation.' }
             ]
         }
     };
 
     const SECTION_TIPS = {
-        kanji: { icon: 'ðŸ“–', title: 'Boost Your Kanji Score', text: 'Study kanji using the radical decomposition method. Learn the meaning of common radicals and use them to guess unfamiliar kanji.' },
-        bunpou: { icon: 'âœ ï¸ ', title: 'Strengthen Your Grammar', text: 'Focus on grammar patterns specific to your JLPT level. Practice sentence construction and fill-in-the-blank exercises daily.' },
-        choukai: { icon: 'ðŸŽ§', title: 'Improve Your Listening', text: 'Immerse yourself in native Japanese audio. Try shadowing techniques: listen, pause, repeat. Your ear will train quickly.' }
+        kanji: { icon: '📖', title: 'Boost Your Kanji Score', text: 'Study kanji using the radical decomposition method. Learn the meaning of common radicals and use them to guess unfamiliar kanji.' },
+        bunpou: { icon: '✏️ ', title: 'Streng then Your Grammar', text: 'Focus on grammar patterns specific to your JLPT level. Practice sentence construction and fill-in-the-blank exercises daily.' },
+        choukai: { icon: '🎧', title: 'Improve Your Listening', text: 'Immerse yourself in native Japanese audio. Try shadowing techniques: listen, pause, repeat. Your ear will train quickly.' }
     };
 
     const SECTION_META = {
@@ -155,9 +155,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Verdict badge
     const verdictBadge = document.getElementById('verdictBadge');
-    if (totalScore >= 70) { verdictBadge.textContent = 'âœ“ Passed'; verdictBadge.className = 'verdict-badge verdict-pass'; }
+    if (totalScore >= 70) { verdictBadge.textContent = '“ Passed'; verdictBadge.className = 'verdict-badge verdict-pass'; }
     else if (totalScore >= 50) { verdictBadge.textContent = '~ Keep Going'; verdictBadge.className = 'verdict-badge verdict-avg'; }
-    else { verdictBadge.textContent = 'âœ— Needs Practice'; verdictBadge.className = 'verdict-badge verdict-fail'; }
+    else { verdictBadge.textContent = '🌱 Needs Practice'; verdictBadge.className = 'verdict-badge verdict-fail'; }
 
     // Section Cards
     const grid = document.getElementById('sectionCardsGrid');
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Summary Rows
     const summaryEl = document.getElementById('summaryRows');
     const summaryData = [
-        { icon: 'âœ…', label: 'Total Correct', val: totalCorrect, pct: totalScore },
+        { icon: '🧩', label: 'Total Correct', val: totalCorrect, pct: totalScore },
         ...sectionOrder.map(id => {
             const st = sectionStats[id];
             const m = SECTION_META[id];
