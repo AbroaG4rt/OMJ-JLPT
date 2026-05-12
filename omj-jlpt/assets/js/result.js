@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const __lang = window.__resultLang || localStorage.getItem('lang') || 'en';
     const __dashTarget = window.__dashTarget || 'dashboard.html';
 
-    // â”€â”€ Motivational Feedback Engine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Motivational Feedback Engine 
     const FEEDBACK = {
         excellent: {
             icon: '🦋', title: 'Outstanding Performance!',
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             icon: '📌¸', title: 'Great Progress!',
             quote: '” Step by step. You\'re making genuine progress. Each study session brings you closer to your JLPT goal.',
             tips: [
-                { icon: '🟣' , title: 'Review Weak Sections', text: 'Focus extra study time on the sections where you scored below 60%. Targeted practice yields the fastest gains.' },
+                { icon: '🟣', title: 'Review Weak Sections', text: 'Focus extra study time on the sections where you scored below 60%. Targeted practice yields the fastest gains.' },
                 { icon: '🔵', title: 'Timed Practice', text: 'Practice answering under exam time conditions to improve your speed and reduce second-guessing.' },
                 { icon: '🟢', title: 'Keep a Mistake Journal', text: 'Write down questions you got wrong and why. Reviewing your mistakes is the #1 most effective study method.' }
             ]
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const feedback = FEEDBACK[feedbackKey];
     document.getElementById('tipsIcon').textContent = feedback.icon;
     document.getElementById('tipsTitle').textContent = feedback.title;
-    document.getElementById('tipsSub').textContent = `${totalScore.toFixed(1)}% â€” ${totalCorrect} correct out of ${totalCount} questions`;
+    document.getElementById('tipsSub').textContent = `${totalScore.toFixed(1)}% ${totalCorrect} correct out of ${totalCount} questions`;
     document.getElementById('tipsQuote').textContent = feedback.quote;
 
     const tipsGrid = document.getElementById('tipsGrid');
@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             y += 19;
         });
 
-        // â”€ Motivational quote (strip all CJK Unicode ranges for jsPDF safety) â”€
+        //  Motivational quote (strip all CJK Unicode ranges for jsPDF safety) 
         y += 4;
         const safeQuote = feedback.quote
             .replace(/[\u3000-\u9fff\uff00-\uffef\u4e00-\u9faf]/g, '') // strip CJK
