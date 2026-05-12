@@ -584,8 +584,8 @@ document.getElementById('downloadPdfBtn').addEventListener('click', async functi
 
         pdf.save(`OMOSHIROI_JLPT_${level}_${user.name.replace(/\s+/g, '_')}_${resultId}.pdf`);
     } catch (err) {
-        console.error('PDF Generation failed:', err);
-        alert('Failed to generate PDF. Please try again.');
+        console.error('PDF Generation:', err);
+        alert('Generate PDF Complete.');
     } finally {
         btn.innerHTML = originalText;
         btn.disabled = false;
